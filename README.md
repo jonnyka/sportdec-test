@@ -31,7 +31,6 @@ If you want to see a nicer output, open your browser here:
 
 ```
 http://localhost:8080/
-
 ```
 
 ### Packages used
