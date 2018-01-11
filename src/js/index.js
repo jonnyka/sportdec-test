@@ -1,9 +1,9 @@
-const express   = require('express'),
-    app         = express(),
-    exphbs      = require('express-handlebars'),
-    port        = process.env.PORT || 8080,
-    github      = require('./github'),
-    twitter     = require('./twitter');
+const express  = require('express'),
+    app        = express(),
+    exphbs     = require('express-handlebars'),
+    port       = process.env.PORT || 8080,
+    github     = require('./github'),
+    twitter    = require('./twitter');
 
 // templating
 app.engine('handlebars', exphbs({
@@ -24,6 +24,7 @@ app.set('views', 'src/views/');
 app.set('view engine', 'handlebars');
 app.use(express.static('src'));
 
+// the main functionality, it runs after npm start and when opening http://localhost:8080/
 let getData = function (req, res) {
     console.log('\x1b[0m', 'Getting github projects...');
 
