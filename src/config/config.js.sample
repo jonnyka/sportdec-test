@@ -1,0 +1,7 @@
+module.exports = {
+    githubToken: 'exampleGithubToken',
+    twitterConsumerKey: 'exampleTwitterConsumerKey',
+    twitterConsumerSecret: 'exampleTwitterConsumerSecret',
+    twitterAccessTokenKey: 'yourTwitterAccessToken',
+    twitterAccessTokenSecret: 'yourTwitterAccessTokenSecret'
+};

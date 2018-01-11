@@ -1,0 +1,27 @@
+<h2>Projects</h2>
+
+{{#each projects}}
+    <div class="project">
+        <h3 class="name">{{{ name }}}</h3>
+        <div class="url"><a href="{{{ url }}}" target="_blank">{{{ url }}}</a></div>
+        {{#if description}}
+            <div class="description">{{{ description }}}</div>
+        {{/if}}
+        <div class="twitter-data">
+            {{#if twitterData}}
+                {{#ifEquals twitterData.status 'error'}}
+                    <div class="twitter-error">Twitter error: {{{ twitterData.data }}}</div>
+                {{else}}
+                    {{#each twitterData.data}}
+                        <div class="tweet">
+                            <div class="tweet-text">{{{ text }}}</div>
+                            <div class="tweet-source"><a href="https://twitter.com/{{{ user.screen_name }}}" target="_blank">@{{{ user.name }}}</a></div>
+                        </div>
+                    {{/each}}
+                {{/ifEquals}}
+            {{else}}
+                    <div class="twitter-error">Twitter error: No twitter data received</div>
+            {{/if}}
+        </div>
+    </div>
+{{/each}}

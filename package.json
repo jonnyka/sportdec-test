@@ -1,19 +1,26 @@
 {
-  "name": "sportsdec-test",
+  "name": "sportdec-test",
   "version": "1.0.0",
   "description": "coding challenge for developers interested in backend roles in Sportdec",
-  "main": "index.js",
+  "main": "src/js/index.js",
   "scripts": {
-    "test": "start"
+    "start": "node src/js/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonnyka/sportsdec-test.git"
+    "url": "git+https://github.com/jonnyka/sportdec-test.git"
   },
   "author": "Gergo Nagy",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonnyka/sportsdec-test/issues"
+    "url": "https://github.com/jonnyka/sportdec-test/issues"
   },
-  "homepage": "https://github.com/jonnyka/sportsdec-test#readme"
+  "homepage": "https://github.com/jonnyka/sportdec-test#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "octonode": "^0.9.1",
+    "request": "^2.83.0",
+    "twitter": "^1.7.1"
+  }
 }
